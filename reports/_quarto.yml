@@ -1,0 +1,32 @@
+project:
+  type: book
+  output-dir: ../docs
+  execute-dir: project
+
+book:
+  title: "Blueprint Analysis Report"
+  subtitle: "Project Notes and Analysis"
+  author: "Thomas McManus"
+  date: "1901-01-01"
+  chapters:
+    - index.qmd
+  favicon: favicon.png
+  sidebar:
+    logo: blueprint-logo.png
+
+bibliography: refs.bib
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    code-fold: true
+    code-summary: "Show code"
+  pdf: default
+
+execute: 
+  cache: false
+  freeze: auto
+
+
